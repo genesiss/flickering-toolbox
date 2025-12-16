@@ -38,14 +38,13 @@ def generate_positions(n_stim: int):
     return positions
 
 def generate_frame_pattern(frames_per_cycle: int, on_frames: int, total_frames: int):
-    """Return list of 1/0 for ON/OFF states."""
     pattern = []
     for frameN in range(total_frames):
         cycle_pos = frameN % frames_per_cycle
         pattern.append(1 if cycle_pos < on_frames else 0)
     return pattern
 
-def calculate_m_sequences(n_stim: int, total_frames: int):
+def calculate_m_sequences(n_stim: int):
     nbits = 6 # Number of bits to use. Length of the resulting sequence will be (2**nbits) - 1. In case of 6, the lenght is 63.
     shift_step = 4 # Shift step of some stimuli. T(k) = 4xK ; k=0,1...n_stim
     base_seq, state = max_len_seq(nbits=nbits)

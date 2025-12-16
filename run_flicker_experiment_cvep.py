@@ -46,7 +46,7 @@ for i in range(N_STIM):
 frameN = 0
 
 # prepare frame patterns
-patterns = calculate_m_sequences(N_STIM, total_frames)
+patterns = calculate_m_sequences(N_STIM)
 
 logging.info(f"Starting flickering sequence (Estimated number of frames: {total_frames}).")
 win.recordFrameIntervals = True # start recording frame intervals so that we get report of dropped frames
