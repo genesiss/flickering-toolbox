@@ -1,0 +1,15 @@
+# Flickering Toolbox - Python Dependencies
+
+# Core dependencies for running experiments
+psychopy>=2025.2.1
+numpy>=2.2.6
+scipy>=1.14.1
+
+# Optional dependencies for testing
+pytest>=9.0.0         # For running parametrized tests
+
+# Installation:
+# pip install -r requirements.txt
+#
+# For minimal installation (experiments only):
+# pip install psychopy numpy scipy
