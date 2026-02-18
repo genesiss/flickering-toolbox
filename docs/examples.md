@@ -184,7 +184,7 @@ cp examples/custom_stimuli_mixed.py my_mixed_experiment.py
 python my_mixed_experiment.py
 ```
 
-### EEG trigger callback example
+### Frame flip trigger callback example
 
 ```bash
 # Copy EEG callback example

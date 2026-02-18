@@ -77,7 +77,7 @@ See the `examples/` folder for:
 - Basic SSVEP and c-VEP experiments
 - Custom frequency configurations
 - Custom stimuli (Gabor patches, letters, images)
-- EEG trigger integration
+- Frame flip callback integration
 
 ## Testing
 
